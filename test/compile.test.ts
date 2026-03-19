@@ -64,6 +64,9 @@ describe("compile", () => {
     expect(fnNames).toContain("getAlertCount");
     expect(fnNames).toContain("getAlert");
     expect(fnNames).toContain("getCriticalAlertCount");
+    expect(fnNames).toContain("addReporter");
+    expect(fnNames).toContain("owner");
+    expect(fnNames).toContain("reporters");
   });
 
   it("ABI contains AlertLogged event", () => {
